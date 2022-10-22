@@ -1,6 +1,10 @@
-body {
-    background-color: #fae588;
-}   
+
+html {
+    background: linear-gradient(150deg,#fae588 0%,#fae588,white 100%);
+    font-family: 'Poppins';
+    width: 100%;
+    height: 100%;
+} 
 
 h1{
     font-family: 'Poppins';
