@@ -61,3 +61,23 @@ label{
     height: auto;
     text-align: center;
 }
+.businessNameLogo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.businessName{
+    width: 80%;
+    
+}
+.businessLogo{
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+}
