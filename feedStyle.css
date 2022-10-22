@@ -1,7 +1,11 @@
+
+html {
+    background: linear-gradient(150deg,#fae588 0%,#fae588,white 100%);
+    font-family: 'Poppins';
+}
 .menuBar{
     height: 20%;
     width: 100%;
-    background-color: rgb(255, 243, 69);
     display:flex;
     flex-direction: row;
 
@@ -60,4 +64,24 @@ label{
     width: 50%;
     height: auto;
     text-align: center;
+}
+.businessNameLogo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.businessName{
+    width: 90%;
+    
+}
+.businessLogo{
+    width:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    object-fit: cover;
+    width: auto;
+    height: 120px;
 }

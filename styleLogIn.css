@@ -1,12 +1,13 @@
 
-body {
-    background-color: #fae588;
+html {
+    background: linear-gradient(150deg,#fae588 0%,#fae588,white 100%);
     font-family: 'Poppins';
 }
 
 .center {
     text-align: center;
-    
+    background-color: #fbf8ed;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 90px;    
 }
 
 #newUser {
@@ -16,6 +17,7 @@ body {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     margin-top: -5%;
+    margin-bottom: 6%;
 }
 
 button {
@@ -27,7 +29,6 @@ button {
     padding-right: 1%;
     padding-top:0.4%;
     padding-bottom: 0.4%;
-
 }
 
 input {
