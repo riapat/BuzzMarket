@@ -7,7 +7,57 @@
 
 
 }
-#p1{
+#businessName{
     font-size: 25px;
-    color: purple;
+    color: rgb(0, 0, 0);
+}
+img {
+    width:5%;
+    height:100%;
+
+}
+.filters{
+    height:auto;
+    width:20%;
+    background-color: rgb(201, 227, 255);
+    text-align: center;
+
+}
+#filterText{
+    color: black;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+label{
+    color: black;
+    font-family: 'Poppins';
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.feedColumn{
+    height: 100%;
+    width: 80%;
+    background-color: rgb(255, 249, 164);
+    display:flex;
+    flex-direction: column;
+}
+.business{
+    color:black;
+    background-color: white;
+    border-radius: 1.5rem;
+    border-width: 0.15rem;
+    font-family: 'Poppins';
+    font-size: 95%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top:0.8%;
+    padding-bottom: 0.8%;
+    margin-bottom: 2%;
+}
+.description{
+    width: 50%;
+    height: auto;
+    text-align: center;
 }
