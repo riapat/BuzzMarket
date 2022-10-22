@@ -2,21 +2,23 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="feedStyle.css">
         <title>Feed | BuzzMarket</title>
         <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Poppins">
+        <script src="feed.js"></script>
     </head>
 
     <body>
         <div class="menuBar">
-            <p id="p1"> </p>
-            <img src="BuzzMarketLogo.png">
+
+            <img src="BuzzMarketLogo.png" class="menuLogo">
 
         </div>
-        <div class = "container">
+        <div class = "row">
         <div class = "filters">
             <p id = "filterText"> <u>Filters</u></p>
             
@@ -42,11 +44,16 @@
             </select>
 
         </div>
+        <div style ="width: 1%">
+        </div>
+        
         <div class = "feedColumn">
             <div class = "business">
-                <div class ="businessNameLogo">
+                <div class ="row">
                     <div class="businessName">
-                        <p id="businessName">Business Name</p>
+                        <p id="businessName"><script>
+                            docWrite(name)
+                        </script></p>
                     </div>
                     <div class ="businessLogo">
                         <img src="logo.png" class="logo">
@@ -57,18 +64,81 @@
                 </div>
                 
                 <p> Tags: </p>
-                <div class="container">
+                <div class="row">
                   <div class = 'description'>
-                    <p>Description</p>
+                    <h1>Description</h1>
+                    <div class = "desText">
+                        <p>
+                            <script>
+                                docWrite(description)
+                            </script>
+                        </p>
+                    </div>
                   </div>
                   
-                  <div class="description">
-                    <p>Contact</p>
+                  <div class="contacts">
+                    <h1>Contact</h1>
+                    <div class="row">
+                        <div class = "socialContainer">
+                            <h2><u>Socials</u></h2>
+                            
+                            
+                            <div class ="row">
+                                <div class="iconList">
+                                    <p></p>
+                                    <a href="#"><i class="fa fa-instagram"></i></a> 
+                                    <p></p>
+                                    <a href="#"><i class="fa fa-facebook"></i></a> 
+                                    <p></p>
+                                    <a href="#"><i class="fa fa-twitter"></i></a> 
+        
+                                </div>
+                                <div style = "width: 10%">
+                                </div>
+                                <div class="socialList">
+                                    <p>@<script>docWrite(ig)</script></p>
+                                    <p></p>
+                                    <p>@<script>docWrite(fb)</script></p>
+                                    <p></p>
+                                    <p>@<script>docWrite(tw)</script></p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "contactContainer">
+                            <div class = "row">
+                                <div class = "iconList">
+                                    <p>Email: </p> 
+                                    <p>Phone #: </p> 
+                                </div>
+                                <div style = "width: 10%">
+                                </div>
+                                <div class="socialList">
+                                    <p><script>docWrite(mail)</script></p>
+                                    <p><script>docWrite(phone)</script></p>
+                                    
+
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    
+                    
+                    </div>
+
+                    
+                    
+
+                    
+
+                    
                   </div>
                 </div>
                 
 
             </div>
+        </div>
         </div>
         </div>
         
