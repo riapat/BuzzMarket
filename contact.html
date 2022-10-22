@@ -7,6 +7,35 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div style="text-align:center">
+        <h1>Contact Us</h1>    
+        <p>Feel free to leave us a message</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="envel.png" style="width:25%">
+            </div>
+        </div>
+        <div class="column">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+               
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+               
+                <label for="uemail">Email</label>
+                <input type ="text" id="uemail" name="email" placeholder="Your email...">
+               
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Leave us feedback..." style="height:100x"></textarea>
+               
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <link rel="stylesheet" href="contact.css">
+
 </body>
 </html>
