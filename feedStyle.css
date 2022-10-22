@@ -103,24 +103,24 @@ h2{
     font-size: 15px;
 }
 .iconList{
-    width: 40%;
+    width: 30%;
     height: auto;
     text-align: right;
 
 }
 .socialList{
-    width: 60%;
+    width: 70%;
     height: auto;
     text-align: left;
 }
 .socialContainer{
-    width: 30%;
+    width: 40%;
     display:flex;
     align-items: center;
     flex-direction: column;
 }
 .contactContainer{
-    width: 70%;
+    width: 60%;
     display:flex;
     align-items: center;
     flex-direction: column;
