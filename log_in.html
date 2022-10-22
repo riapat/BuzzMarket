@@ -5,10 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log-In</title>
-    <link rel="stylesheet" href="css/style.css"> 
-    
+    <link rel="stylesheet" href="styleLogIn.css"> 
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Poppins">
+    <script src="api.js"></script>
 </head>
 <body>
+    <div class="container">
+        <div class="center">
+            <img src="logo.png">
+            <h1> SIGN IN</h1>
+            <form> 
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input type="text" id ="email" name ="email">
+                <br>
+                <br>
+                <label for="pass"><b>Password</b></label>
+                <br>
+                <input type="text" id="pass" name="pass">
+            </form>
+            <br>
+            <button type="button">  Log In  </button>
+            <br>
+            <hr>
+            <h4>Are you a new bee at BuzzMarket?</h4>
+            <button type="button" id="newUser">Create an Account</button>
+        </div>
+    </div>
+    
     
 </body>
 </html>
