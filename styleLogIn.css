@@ -6,6 +6,7 @@ body {
 
 .center {
     text-align: center;
+    
 }
 
 #newUser {
@@ -17,3 +18,31 @@ body {
     margin-top: -5%;
 }
 
+button {
+    color:white;
+    background-color: black;
+    border-radius: 1.5rem;
+    font-family: 'Poppins';
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top:0.4%;
+    padding-bottom: 0.4%;
+
+}
+
+input {
+    width: 100%;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%); /* Firefox */
+    -ms-transform: translate(-50%, -50%);  /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Safari and Chrome*/
+    -o-transform: translate(-50%, -50%); /* Opera */
+    transform: translate(-50%, -50%);
+  
+    
+}
