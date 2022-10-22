@@ -6,18 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log-In</title>
     <link rel="stylesheet" href="styleLogIn.css"> 
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Poppins">
     <script src="api.js"></script>
 </head>
 <body>
-    <h1> Sign In</h1>
-    <form> 
-        <label for="email">Email</label>
+    <div class="center">
+        <h1> Sign In</h1>
+        <form> 
+            <label for="email">Email</label>
+            <br>
+            <input type="text" id ="email" name ="email">
+            <br>
+            <br>
+            <label for="pass">Password</label>
+            <br>
+            <input type="text" id="pass" name="pass">
+        </form>
         <br>
-        <input type="text" id ="email" name ="email">
-        <br>
-        <label for="pass">Password</label>
-        <br>
-        <input type="text" id="pass" name="pass">
-    </form>
+        <button type="button">Log In</button>
+        <br><br>
+        <h4>Are you a new bee at BuzzMarket?</h4>
+        <button type="button" id="newUser">Create an Account</button>
+    </div>
+    
 </body>
 </html>

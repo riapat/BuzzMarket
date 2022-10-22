@@ -1,0 +1,19 @@
+
+body {
+    background-color: #fae588;
+    font-family: 'Poppins';
+}
+
+.center {
+    text-align: center;
+}
+
+#newUser {
+    font-size: 110%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-top: -5%;
+}
+
