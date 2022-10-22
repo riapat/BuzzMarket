@@ -2,46 +2,55 @@ body {
     background-color: #fae588;
 }   
 
-
-img{
-    margin-left: 100px;
+h1{
+    font-family: 'Poppins';
+    margin-top: 40px;
 }
-   input [type=text],textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid;
-        margin-top: 30px;
-        margin-bottom: 16px;
-        resize: vertical;
-        }
-        input[type=submit] {
-            background-color: green;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            cursor: pointer;
-        
-        }
-        
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
-        
-        .container {
-            border-radius: 5px;
+p{
+    font-family: 'Poppins';
+}
+img{
+    width: 400px;
+    height: auto;
+}
 
-            padding: 10px;
-        }
-        
-        .left {
-            float: left;
-            width: 50%;
-            margin-top: 6px;
-            padding: 20px;
-        }
-        
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
+label{
+    font-family: 'Poppins';
+}
+
+button{
+    color:white;
+    background-color: black;
+    border-radius: 1.5rem;
+    font-family: 'Poppins';
+}
+
+input{
+    font-family: 'Poppins';
+    width: 300px;
+}
+textarea{
+    font-family: 'Poppins';
+    width: 300px;
+    height: 100px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    
+}
+.column{
+    margin-top: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
+
+   

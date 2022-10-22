@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Poppins">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,29 +12,37 @@
     <div class="container">
         <div style="text-align:center">
         <h1>Contact Us</h1>    
-        <p>Feel free to leave us a message</p>
+        <p>Leave us a message or let us know how we are doing!</p>
         </div>
         <div class="row">
             <div class="column">
-                <img src="envel.png" style="width:25%">
+                <img src="envel.png">
             </div>
-        </div>
-        <div class="column">
-            <form action="/action_page.php">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your first name...">
-               
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name...">
-               
-                <label for="uemail">Email</label>
-                <input type ="text" id="uemail" name="email" placeholder="Your email...">
-               
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Leave us feedback..." style="height:100x"></textarea>
-               
-                <input type="submit" value="Submit">
-            </form>
+        
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <p></p>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+                    <p></p>
+                
+                    <label for="lname">Last Name</label>
+                    <p></p>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                    <p></p>
+                
+                    <label for="uemail">Email</label>
+                    <p></p>
+                    <input type ="text" id="uemail" name="email" placeholder="Your email...">
+                    <p></p>
+                
+                    <label for="subject">Subject</label>
+                    <p></p>
+                    <textarea id="subject" name="subject" placeholder="Leave us feedback..."></textarea>
+                    <p></p>
+                    <button type="button">  Submit  </button>
+                </form>
+            </div>
         </div>
     </div>
     <link rel="stylesheet" href="contact.css">
