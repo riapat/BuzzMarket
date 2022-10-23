@@ -10,7 +10,116 @@ iframe {
     border-color: #dcb400;
 
 }
+.menuLogo {
+    width:70px;
+    height:70px;
 
+}
+.white{
+    color: rgb(255, 245, 98);;
+    background: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin: 0 5px;
+    -webkit-box-decoration-break: clone;
+    -moz-background-inline-policy: clone;
+    box-decoration-break: clone;
+    display: flex;
+    justify-content: center;
+}
+.menuBar{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+h1{
+    font-family: 'Poppins';
+    margin-top: 40px;
+}
+p{
+    font-family: 'Poppins';
+}
+img{
+    width: 400px;
+    height: auto;
+}
+
+label{
+    font-family: 'Poppins';
+}
+
+button{
+    color:white;
+    background-color: black;
+    border-radius: 1.5rem;
+    font-family: 'Poppins';
+}
+.black{
+    color:black;
+    font-weight: normal;
+}
+#back{
+    color: #fae588;
+}
+.button1 {
+    color: rgb(0, 0, 0);;
+    background: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin: 0 5px;
+    -webkit-box-decoration-break: clone;
+    -moz-background-inline-policy: clone;
+    box-decoration-break: clone;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color:#ffffff;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+.button1:hover {
+    color: rgb(255, 255, 255);;
+    background: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin: 0 5px;
+    -webkit-box-decoration-break: clone;
+    -moz-background-inline-policy: clone;
+    box-decoration-break: clone;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    height: 60px;
+    font-size: 22px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color:#000000
+
+  }
+  a {
+    display: block;
+    line-height: 2em;
+    text-align: center;
+    text-decoration: none;
+}
+  h3{
+    font-size: 50px;
+    color: #cda800;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: bold;
+}
 #subheader {
     text-decoration: underline;
 }

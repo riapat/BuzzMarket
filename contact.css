@@ -103,6 +103,12 @@ button{
     border-color:#000000
 
   }
+  h3{
+    font-size: 50px;
+    color: #cda800;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: bold;
+}
   a {
     display: block;
     line-height: 2em;
@@ -132,12 +138,7 @@ textarea{
     justify-content: center;
     
 }
-h3{
-    font-size: 50px;
-    color: #cda800;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-weight: bold;
-}
+
 
 
 
