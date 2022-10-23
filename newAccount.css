@@ -6,6 +6,7 @@ html {
 
 body {
     font-family: 'Poppins';
+	font-weight: normal;
 }
 .center {
     text-align: center;
@@ -45,7 +46,7 @@ li {
     margin-top: -1%;
 }
 
-#msform div {
+#msform .box {
 	background: white;
 	border: 0 none;
 	border-radius: 3px;
@@ -106,6 +107,7 @@ select {
     flex-direction: column;
     width: 50%;
     align-items: center;
+	text-shadow: none;
 }
 
 
@@ -202,7 +204,6 @@ ul > li {
 	background: white;
 	color: #dfb600;
 }
-
 
 
 

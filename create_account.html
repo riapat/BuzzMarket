@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Poppins">
+    
     <script src="account.js"></script>
 </head>
 <body>
@@ -20,7 +21,7 @@
             <li id="3">Contact Information</li>
             <li id="4">Social Media</li>
         </ul>
-        <div id="fs1">
+        <div class="box" id="fs1">
             <h2>Set Up Credentials</h2>
             <h3>Step 1</h3>
             <label for="emailLog">Email for Log In</label>
@@ -37,14 +38,14 @@
             
         </div>
         
-        <div id="fs2" hidden>
+        <div class = "box" id="fs2" hidden>
             <h2>Business Information</h2>
             <h3>Step 2</h3>
             <label for="name">Name of Business</label>
             <input type="text" id="margin" name="name" placeholder="Enter here" />
             <br><br>
+    
             <label for="industries" >Select Industry</label>
-            <br>
             <select name="industry" id="industry">
                 <option value="transportation">Transportation</option>
                 <option value="aerospace">Aerospace</option>
@@ -65,7 +66,8 @@
                 <option value="hospitality">Hospitality</option>
 
             </select>
-            <br><br>
+            
+
             <label for="description">Description</label>
             <textarea type="text" id="margin" name="description" placeholder="Summarize your business in less than 200 words."></textarea>
             <br><br>
@@ -146,11 +148,12 @@
             <br><br>
         </div>
         
-        <div id="fs3"  hidden>
+        <div class = "box" id="fs3"  hidden>
             <h2>Contact Information</h2>
             <h3>Step 3</h3>
+            <div style = "display: flex; flex-direction: column;align-items: center;">
             <label for="name">Your Name</label>
-            <input type="text" id="margin" name="name" placeholder="Enter your name here" />
+            <input type="text" id="margin" name="name" placeholder="Enter your name here" /></div>
             <br><br>
             <label for="position">Your Position in the Business</label>
             <input type="text" id="margin" name="position" placeholder="Enter your position here" />
@@ -161,7 +164,7 @@
             <label for="email">Best Email Address to Contact</label>
             <input type="text" id="margin" name="email" placeholder="Enter valid email here" />
             <br><br>
-            <label for="webaite">Business' Website</label>
+            <label for="website">Business' Website</label>
             <input type="text" id="margin" name="website" placeholder="Enter website link here" />
             <br><br>
             <input type="button" onclick="prevButtonClick3()" name="previous" class="previous action-button" value="Previous" />
@@ -169,11 +172,12 @@
             <br><br>
         </div>
         
-        <div id="fs4" hidden>
+        <div class = "box" id="fs4" hidden>
             <h2>Social Media Information</h2>
             <h3>Step 4</h3>
+            <div style = "display: flex; flex-direction: column;align-items: center;">
             <label for="instagram">Instagram</label>
-            <input type="text" id="margin" name="instagram" placeholder="Enter Instagram handle without @." />
+            <input type="text" id="margin" name="instagram" placeholder="Enter Instagram handle without @." /> </div>
             <br><br>
             <label for="facebook">Facebook</label><br>
             <input type="text" id="margin" name="facebook" placeholder="Enter Facebook username here." />
