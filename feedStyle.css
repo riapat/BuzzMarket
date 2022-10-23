@@ -244,3 +244,9 @@ h3{
     border-color:#000000
 
   }
+  a {
+    display: block;
+    line-height: 2em;
+    text-align: center;
+    text-decoration: none;
+}

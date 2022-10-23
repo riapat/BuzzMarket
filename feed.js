@@ -12,13 +12,16 @@ function docWrite(variable) {
 
 }
 
-let contactUs = document.getElementById("contactUs");
 let feed = document.getElementById("feed");
 let microLoans = document.getElementById("microLoans");
 let addResources = document.getElementById("addResources");
+let contactUs = document.getElementById("contactUs");
+
+
+
 
 // When our button gets clicked
 contactUs.onclick = function () {
-    
+    alert("you clicked shit");
     
   };
