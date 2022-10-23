@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microloans</title>
+    <script type="fs csv-parse" src="microloan.js"></script>
+</head>
+<body>
+    <form id="myForm">
+      <input type="text" id="money" name="money" placeholder="Approximately how much money do you need? (in $)"/>
+      <br />
+      <button onclick="return submitButton()">Submit</button>
+      <br>
+      <br>
+      <label>Matches</label><br>
+      <textarea id="result" readonly>Matches loading...</textarea>
+    </form>
+  </body>
+</html>
