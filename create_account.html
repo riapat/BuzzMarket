@@ -141,8 +141,8 @@
             <label for="employees">How many employees do the business have?</label>
             <input type="number" id="margin override_input" name="employee" placeholder="Enter a number (ex. 10)" />
             <br><br>
-            <input type="button" name="previous" class="previous action-button" value="Previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" onclick="return prevButtonClick2()" name="previous" class="action-button" value="Previous" />
+            <input type="button" onclick="return nextButtonClick2()" name="next" class="next action-button" value="Next" />
             <br><br>
         </div>
         
@@ -164,8 +164,8 @@
             <label for="webaite">Business' Website</label>
             <input type="text" id="margin" name="website" placeholder="Enter website link here" />
             <br><br>
-            <input type="button" name="previous" class="previous action-button" value="Previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" onclick="prevButtonClick3()" name="previous" class="previous action-button" value="Previous" />
+            <input type="button" onclick="nextButtonClick3()" name="next" class="next action-button" value="Next" />
             <br><br>
         </div>
         
@@ -181,8 +181,9 @@
             <label for="linkedin">Linkedin</label><br>
             <input type="text" id="margin" name="linkedin" placeholder="Enter Linkedin link here." />
             <br><br>
-            <input type="button" name="previous" class="previous action-button" value="Previous" />
-            <input type="button" name="submit" class="submit action-button" value="Submit" />
+            <input type="button" onclick="prevButtonClick4()" name="previous" class="previous action-button" value="Previous" />
+            
+            <input type="button" onclick = "submitButton()" name="submit" class="submit action-button" value="Submit" />
             <br><br>
         </div>
     </form>
