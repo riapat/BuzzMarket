@@ -2,22 +2,34 @@
 html {
     background: linear-gradient(150deg,#fae588 0%,#fae588,white 100%);
     font-family: 'Poppins';
+    width: 100%;
+    height: 100%;
+}
+body{
+    height: 100%;
+    width:100%
 }
 .menuBar{
-    height: 20%;
+    height: 12%;
     width: 100%;
     display:flex;
     flex-direction: row;
+    align-items: center;
 
 
+}
+.businessName{
+    display:flex;
+    align-items: center;
 }
 #businessName{
     font-size: 25px;
     color: rgb(0, 0, 0);
+    
 }
-img {
-    width:5%;
-    height:100%;
+.menuLogo {
+    width:80px;
+    height:80px;
 
 }
 .filters{
@@ -25,6 +37,11 @@ img {
     width:20%;
     background-color: rgb(201, 227, 255);
     text-align: center;
+    margin: 20px;
+    border-style: solid;
+    border-color:rgb(201, 227, 255); 
+    border-width: 20px;
+    border-radius: 20px;
 
 }
 #filterText{
@@ -36,19 +53,15 @@ label{
     color: black;
     font-family: 'Poppins';
 }
-.container{
-    display: flex;
-    flex-direction: row;
-}
 .feedColumn{
     height: 100%;
     width: 80%;
-    background-color: rgb(255, 249, 164);
     display:flex;
     flex-direction: column;
 }
 .business{
     color:black;
+    width: 90%;
     background-color: white;
     border-radius: 1.5rem;
     border-width: 0.15rem;
@@ -61,14 +74,19 @@ label{
     margin-bottom: 2%;
 }
 .description{
-    width: 50%;
+    width: 55%;
     height: auto;
     text-align: center;
 }
-.businessNameLogo{
+.contacts{
+    width: 45%;
+    height: auto;
+    text-align: center;
+}
+.row{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    
 }
 .businessName{
     width: 90%;
@@ -84,4 +102,99 @@ label{
     object-fit: cover;
     width: auto;
     height: 120px;
+}
+.desText{
+    text-align: left;
+}
+h1{
+    font-size: 20px;
+}
+h2{
+    font-size: 15px;
+}
+.iconList{
+    width: 40%;
+    height: auto;
+    text-align: right;
+
+}
+.socialList{
+    width: 60%;
+    height: auto;
+    text-align: left;
+}
+.socialContainer{
+    width: 40%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contactContainer{
+    width: 60%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.tag{
+    background-color: rgb(209, 160, 255);
+    border-style: solid;
+    border-color: rgb(209, 160, 255);;
+    display: inline-block;
+    height: 15px;
+    width: auto;
+ 
+   
+
+}
+
+.industryRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20px;
+}
+
+#text {
+    padding: 50px;
+    line-height: 2;
+    color: #293241;
+  }
+
+.pink{
+    color: rgb(0, 0, 0);
+    background: pink;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    -webkit-box-decoration-break: clone;
+    -moz-background-inline-policy: clone;
+    box-decoration-break: clone;
+}
+
+.white{
+    color: rgb(255, 245, 98);;
+    background: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin: 0 5px;
+    -webkit-box-decoration-break: clone;
+    -moz-background-inline-policy: clone;
+    box-decoration-break: clone;
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    font-size: 50px;
+    color: #cda800;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: bold;
+}
+.black{
+    color:black;
+    font-weight: normal;
+}
+#back{
+    color: #fae588;
 }
