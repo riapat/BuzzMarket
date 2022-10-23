@@ -7,20 +7,13 @@ var mail = "rhea.iyer8@gmail.com";
 var phone = "(888) 888-8888";
 var employee = "Rhea Iyer";
 var position =  "Co-Founder";
-const tags1 = ["Hospitality", "Catering"]
-const tags2 = ["Finance", "Banking"]
-const tags3 = ["Information Technology", "Computer Science"]
+
+const tags1 = ["Finance"];
+const tags2 = ["Hospitality"];
+const tags3 = ["Information Technology"];
 
 
-let hosp = document.getElementById("industry1");
-let IT = document.getElementById("industry2");
-let homeCare = document.getElementById("industry3");
-let finance = document.getElementById("industry4");
 
-
-let bus1 = document.getElementById("bus1");
-let bus2 = document.getElementById("bus2");
-let bus3 = document.getElementById("bus3");
 
 
 function docWrite(variable) {
@@ -29,12 +22,17 @@ function docWrite(variable) {
 }
 
 function changeVis1(){
-    alert("hallo");
-    bus3.style.display = "none";
-    if(document.getElementById("id1").checked == true){
-        bus1.style.display = "none";
-        bus1.style.visibility = "hidden";
+    let bus1 = document.getElementById("bus1");
+    let bus2 = document.getElementById("bus2");
+    let bus3 = document.getElementById("bus3");
 
+
+    let hosp = document.getElementById("id1");
+    let IT = document.getElementById("id2");
+    let finance = document.getElementById("id3");
+    let other = document.getElementById("id4");
+
+    if(document.getElementById("id1").checked == true){
         if(tags1.includes("Hospitality")){
             setToVisible(bus1);
 
@@ -48,7 +46,7 @@ function changeVis1(){
         else{
             setToHidden(bus2);
         }
-        if(tags2.includes("Hospitality")){
+        if(tags3.includes("Hospitality")){
             setToVisible(bus3)
         }
         else{
@@ -56,19 +54,68 @@ function changeVis1(){
         }
         
     }
-    return;
+    else if(IT.checked == true){
+        if(tags1.includes("Information Technology")){
+            setToVisible(bus1);
+
+        }
+        else{
+            setToHidden(bus1);
+        }
+        if(tags2.includes("Information Technology")){
+            setToVisible(bus2)
+        }
+        else{
+            setToHidden(bus2);
+        }
+        if(tags3.includes("Information Technology")){
+            setToVisible(bus3)
+        }
+        else{
+            setToHidden(bus3);
+        }
+        
+    }
+    else if(finance.checked == true){
+        if(tags1.includes("Finance")){
+            setToVisible(bus1);
+
+        }
+        else{
+            setToHidden(bus1);
+        }
+        if(tags2.includes("Finance")){
+            setToVisible(bus2)
+        }
+        else{
+            setToHidden(bus2);
+        }
+        if(tags3.includes("Finance")){
+            setToVisible(bus3)
+        }
+        else{
+            setToHidden(bus3);
+        }
+        
+    }
+    else{
+        setToVisible(bus1);
+        setToVisible(bus2);
+        setToVisible(bus3);
+    }
+    
     
     
 
 }
 
 function setToHidden(bus){
-    bus.style.visibility = "hidden";
+    bus.style.display = "none";
     return;
 }
 
 function setToVisible(bus){
-    bus.style.visibility = "visible";
+    bus.style.display = "block";
     return;
 }
 
