@@ -9,6 +9,7 @@ body {
 }
 .center {
     text-align: center;
+    margin-top:0%;
 }
 
 h1 {
@@ -44,7 +45,7 @@ li {
     margin-top: -1%;
 }
 
-#msform fieldset {
+#msform div {
 	background: white;
 	border: 0 none;
 	border-radius: 3px;

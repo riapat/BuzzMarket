@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account</title>
     <link rel="stylesheet" href="newAccount.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Poppins">
     <script src="account.js"></script>
@@ -14,12 +15,12 @@
     <h1 class="center">NEW ACCOUNT</h1>
     <form id="msform">
         <ul id="progressbar">
-            <li>Credentials</li>
-            <li>Business Information</li>
-            <li>Contact Information</li>
-            <li>Social Media</li>
+            <li id="1" class="active">Credentials</li>
+            <li id="2">Business Information</li>
+            <li id="3">Contact Information</li>
+            <li id="4">Social Media</li>
         </ul>
-        <fieldset>
+        <div id="fs1">
             <h2>Set Up Credentials</h2>
             <h3>Step 1</h3>
             <label for="emailLog">Email for Log In</label>
@@ -32,10 +33,11 @@
             <label for="password">Confirm Password</label>
             <input type="password" id="margin" name="pass" placeholder="Retype password here." />
             <br>
-            <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset>
+            <button class="action-button" onclick="return nextButtonClick1()">Next</button>
+            
+        </div>
         
-        <fieldset>
+        <div id="fs2" hidden>
             <h2>Business Information</h2>
             <h3>Step 2</h3>
             <label for="name">Name of Business</label>
@@ -142,9 +144,9 @@
             <input type="button" name="previous" class="previous action-button" value="Previous" />
             <input type="button" name="next" class="next action-button" value="Next" />
             <br><br>
-        </fieldset>
+        </div>
         
-        <fieldset>
+        <div id="fs3"  hidden>
             <h2>Contact Information</h2>
             <h3>Step 3</h3>
             <label for="name">Your Name</label>
@@ -165,9 +167,9 @@
             <input type="button" name="previous" class="previous action-button" value="Previous" />
             <input type="button" name="next" class="next action-button" value="Next" />
             <br><br>
-        </fieldset>
+        </div>
         
-        <fieldset>
+        <div id="fs4" hidden>
             <h2>Social Media Information</h2>
             <h3>Step 4</h3>
             <label for="instagram">Instagram</label>
@@ -182,7 +184,7 @@
             <input type="button" name="previous" class="previous action-button" value="Previous" />
             <input type="button" name="submit" class="submit action-button" value="Submit" />
             <br><br>
-        </fieldset>
+        </div>
     </form>
 </body>
 </html>
