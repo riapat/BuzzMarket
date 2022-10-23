@@ -12,6 +12,119 @@
 </head>
 <body>
     <h1 class="center">NEW ACCOUNT</h1>
+    <form id="msform">
+        <ul>
+            <li>Business Information</li>
+            <li>Financial Information</li>
+            <li>Contact Information</li>
+        </ul>
+        <fieldset>
+            <h2>Business Information</h2>
+            <h3>Step 1</h3>
+            <label for="name">Name of Business</label>
+            <input type="text" id="margin" name="name" placeholder="Enter here" />
+            <br><br>
+            <label for="industries" >Select Industry</label>
+            <br>
+            <select name="industry" id="industry">
+                <option value="transportation">Transportation</option>
+                <option value="aerospace">Aerospace</option>
+                <option value="agriculture">Agriculture</option>
+                <option value="it">Information Technology</option>
+                <option value ="telecomm">Telecommunication</option>
+                <option value="education">Education</option>
+                <option value="construction">Construction</option>
+                <option value="electronics">Electronics</option>
+                <option value="manufacturing">Manufacturing</option>
+                <option value="energy">Energy</option>
+                <option value="pharmaceutical">Pharmaceutical</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="food">Food</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="media">Media</option>
+                <option value="mining">Mining</option>
+                <option value="hospitality">Hospitality</option>
 
+            </select>
+            <br><br>
+            <label for="description">Description</label>
+            <textarea type="text" id="margin" name="description" placeholder="Summarize your business in less than 200 words."></textarea>
+            <br><br>
+            <label for="year">When was your business founded?</label>
+            <input type="number" id="margin override_input" name="year" placeholder="Enter a year (ex. 2022)" />
+            <br><br>
+
+            <label id = "header spacer" for="location">Location</label>
+            <br>
+
+            <div class="table">
+                <div class="container">
+                    <label id = "spacer2"for="city">City</label>
+                    <input type="text" id="override_input margin" name="city" placeholder="Enter a city" />
+                </div>
+                <div class="container">
+                    <label id="spacer" for="state">State</label>
+                    
+                    <select name="state" id="state">
+                        <option value="alabama">AL</option>
+                        <option value="alaska">AK</option>
+                        <option value="arizona">AZ</option>
+                        <option value="california">CA</option>
+                        <option value ="colorado">CO</option>
+                        <option value="connecticut">CT</option>
+                        <option value="delaware">DE</option>
+                        <option value="florida">FL</option>
+                        <option value="georgia">GA</option>
+                        <option value="hawaii">HI</option>
+                        <option value="idaho">ID</option>
+                        <option value="illinois">IL</option>
+                        <option value="indiana">IN</option>
+                        <option value="iowa">IA</option>
+                        <option value="kansas">KS</option>
+                        <option value="kentucky">KY</option>
+                        <option value="louisiana">LA</option>
+                        <option value="maine">ME</option>
+                        <option value="maryland">MD</option>
+                        <option value="massachusetts">MA</option>
+                        <option value="michigan">MI</option>
+                        <option value="minnesota">MN</option>
+                        <option value="mississippi">MS</option>
+                        <option value="missouri">MO</option>
+                        <option value="montana">MT</option>
+                        <option value="nebraska">NE</option>
+                        <option value="nevada">NE</option>
+                        <option value="newhampshire">NE</option>
+                        <option value="newjersey">NJ</option>
+                        <option value="newmexico">NM</option>
+                        <option value="newyork">NY</option>
+                        <option value="northcarolina">NC</option>
+                        <option value="northdakota">ND</option>
+                        <option value="ohio">OH</option>
+                        <option value="oklahama">OH</option>
+                        <option value="oregon">OR</option>
+                        <option value="pennsylvania">PA</option>
+                        <option value="rhodeisland">RI</option>
+                        <option value="southcarolina">SC</option>
+                        <option value="southdakota">SD</option>
+                        <option value="tennessee">TN</option>
+                        <option value="texas">TX</option>
+                        <option value="utah">UT</option>
+                        <option value="vermont">VT</option>
+                        <option value="virginia">VA</option>
+                        <option value="washington">WA</option>
+                        <option value="westvirginia">WV</option>
+                        <option value="wisconsin">WI</option>
+                        <option value="wyoming">WY</option>
+
+                    </select>
+                </div>
+                
+            </div>
+
+            
+            
+
+        </fieldset>
+    </form>
 </body>
 </html>
