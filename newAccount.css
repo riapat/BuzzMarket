@@ -1,5 +1,10 @@
+html {
+    height:max-content;
+    background: linear-gradient(150deg,#fae588 0%,#fae588,white 100%);
+    font-family: 'Poppins';
+}
+
 body {
-    background-color: #fae588;
     font-family: 'Poppins';
 }
 .center {
@@ -9,3 +14,118 @@ body {
 h1 {
     font-size:300%;
 }
+
+
+h3 {
+    margin-top:-2%;
+    color:navy;
+}
+
+#margin {
+    margin-top: 2%;
+}
+
+#spacer {
+    margin-bottom: 8%;
+}
+
+#spacer2 {
+    margin-bottom:3%;
+}
+li {
+    list-style: none;
+}
+
+#msform {
+	width: 40%;
+	margin: 11px auto;
+	text-align: center;
+	position: relative;
+
+}
+
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+    text-align: center;
+	margin: 0 10%;
+	
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+
+#msform input, #msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 80%;
+	box-sizing: border-box;
+	color: #2C3E50;
+	font-size: 13px;
+    font-family: 'Poppins';
+}
+
+
+
+label {
+    font-weight: bold;
+    color:black;
+}
+
+#override_input {
+    padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 70%;
+	box-sizing: border-box;
+	color: #2C3E50;
+	font-size: 13px;
+    font-family: 'Poppins';
+}
+
+select {
+    position:inherit;
+
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+
+.table {
+   display:flex;
+   flex-direction: row;
+
+}
+
+#header {
+    font-size:110%;
+    font-weight:bolder;
+}
+
+ul > li {
+    list-style: none;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
