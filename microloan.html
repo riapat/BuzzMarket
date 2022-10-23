@@ -5,17 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microloans</title>
-    <script type="fs csv-parse" src="microloan.js"></script>
+    <script src="microloan.js"></script>
+    <link rel="stylesheet" href="microloan.css"> 
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Poppins">
+
 </head>
 <body>
+    
+    
     <form id="myForm">
-      <input type="text" id="money" name="money" placeholder="Approximately how much money do you need? (in $)"/>
-      <br />
-      <button onclick="return submitButton()">Submit</button>
-      <br>
-      <br>
-      <label>Matches</label><br>
-      <textarea id="result" readonly>Matches loading...</textarea>
+        <h1>MicroLoan Matching</h1>
+        <h3 id="subheader">Database of Organizations Providing MicroLoans</h3>
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR5jKhLR8l_7Vm69xOrAKV6jhr8aTOJvKtYa2wA3l9JSyWFToQUEcxagnS6kiJyuFC4g9N3hyC94gNn/pubhtml?gid=599238760&amp;single=true&amp;widget=true&amp;headers=false"></iframe><br>
+        <h3 id="subheader">MicroLoan Match</h3>
+        <label >Approximately how much money do you need? (in $)</label><br>
+        <input type="text" id="money" class="input" name="money" placeholder="Enter a price amount here."/>
+        <br />
+        <button onclick="return submitButton()">Submit</button>
+        <br>
+        <br>
+        <label>Matches</label><br>
+        <textarea id="result" class="input" readonly>Matches loading...</textarea>
     </form>
   </body>
 </html>

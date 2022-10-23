@@ -1,0 +1,37 @@
+html {
+    font-family: 'Poppins';
+    background: linear-gradient(150deg,#fae588 0%,#fae588,white 100%);
+    text-align: center;
+}
+
+iframe {
+    width: 80%;
+    height: 100%;
+}
+
+#subheader {
+    text-decoration: underline;
+}
+
+.input {
+    width:15%;
+    line-height: 1;
+    padding: 0.5%;
+    font-family: 'Poppins';
+    margin-top:1%;
+    margin-bottom:1%;
+}
+
+button {
+    background-color: black;
+    color: #fae588;
+    border-radius: 10px;
+    border-width: 5%;
+
+    font-family: 'Poppins';
+    padding-left:1%;
+    padding-right:1%;
+    padding-top:  0.2%;
+    padding-bottom: 0.2%;
+
+}
