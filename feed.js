@@ -5,6 +5,8 @@ var fb = "byteBees";
 var tw = "byteBees";
 var mail = "rhea.iyer8@gmail.com";
 var phone = "(888) 888-8888";
+var employee = "Rhea Iyer";
+var position =  "Co-Founder";
 
 
 function docWrite(variable) {
@@ -12,13 +14,16 @@ function docWrite(variable) {
 
 }
 
-let contactUs = document.getElementById("contactUs");
 let feed = document.getElementById("feed");
 let microLoans = document.getElementById("microLoans");
 let addResources = document.getElementById("addResources");
+let contactUs = document.getElementById("contactUs");
+
+
+
 
 // When our button gets clicked
 contactUs.onclick = function () {
-    
+    alert("you clicked shit");
     
   };

@@ -31,8 +31,8 @@ body{
     
 }
 .menuLogo {
-    width:80px;
-    height:80px;
+    width:70px;
+    height:70px;
 
 }
 .filters{
@@ -104,7 +104,7 @@ label{
 .logo{
     object-fit: cover;
     width: auto;
-    height: 120px;
+    height: 100px;
 }
 .desText{
     text-align: left;
@@ -167,6 +167,16 @@ h2{
 .pink{
     color: rgb(0, 0, 0);
     background: pink;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    -webkit-box-decoration-break: clone;
+    -moz-background-inline-policy: clone;
+    box-decoration-break: clone;
+}
+.green{
+    color: rgb(0, 0, 0);
+    background: rgb(35, 166, 35);
     padding: 5px 10px;
     border-radius: 5px;
     margin: 0 5px;
@@ -244,3 +254,9 @@ h3{
     border-color:#000000
 
   }
+  a {
+    display: block;
+    line-height: 2em;
+    text-align: center;
+    text-decoration: none;
+}
