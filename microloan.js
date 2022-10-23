@@ -1,6 +1,5 @@
-const fs = require("fs");
-const { parse } = require("csv-parse");
-const { match } = require("assert");
+import fs from 'fs';
+import {parse} from 'csv-parse';
 
 var csvConvert = new Array(7);
 var index = 0;
@@ -24,6 +23,7 @@ fs.createReadStream("hackgt 9 micro-loans data - Sheet1.csv")
 
 });
 console.log(csvConvert);
+
 function submitButton() {
     let need = parseInt(document.getElementById('money').value);
     console.log(need);

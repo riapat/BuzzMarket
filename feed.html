@@ -30,30 +30,25 @@
 
 
 
+
+        <div style = "width: 70%; display: flex; flex-direction: row; justify-content: space-between">
+        
+        
         <button class="button" id="feed">Feed</button>
-        <p id="back">
-            _ldfnasn
-        </p>
+       
 
-        <button class="button" id="microLoans">Micro Loans</button>
-        <p id="back">
-            _ldfnasn
-        </p>
+        <button class="button" id="microLoans">MicroLoan Match</button>
+        
 
-        <button class="button" id="addResources">Additional Resources</button>
-        <p id="back">
-            _ldfnasn
-        </p>
-
+    
         <a href="contact.html">
             <button class="button" id="contactUs">Contact Us</button>
         </a>
-        <p id="back">
-            _ldfnasn
-        </p>
+        
         <a href="log_in.html">
             <button class="button" id="Log In"> Log In</button>
         </a>
+    </div>
 
     </div>
     <div class="row">
@@ -63,16 +58,17 @@
                 <h1>Industry:</h1>
                 <p> </p>
 
-                <input type="checkbox" id="industry1" name="industry1" value="Hospitality">
+                <input type="checkbox" id="id1">
                 <label for="industry1">Hospitality</label><br>
-                <input type="checkbox" id="industry2" name="industry2" value="IT">
-                <label for="vehicle2"> Information Technology</label><br>
-                <input type="checkbox" id="industry3" name="industry3" value="HomeCare">
-                <label for="vehicle3"> House/Home Care</label><br>
-                <input type="checkbox" id="industry4" name="industry4" value="Finance">
-                <label for="vehicle3"> Finance</label><br>
-                <input type="checkbox" id="industry5" name="industry5" value="Other">
-                <label for="vehicle3"> Other</label><br>
+                <input type="checkbox" id="id2">
+                <label for="industry2"> Information Technology</label><br>
+                <input type="checkbox" id="id3">
+                <label for="industry4"> Finance</label><br>
+                <input type="checkbox" id="id4">
+                <label for="industry5"> Other</label><br>
+                <p> </p>
+
+                <button class = "submit" id = "submit" onclick="changeVis1()"> Submit</button>
 
                 <p></p>
                 <label for="employee-num">Number of Employees:</label>
@@ -98,7 +94,7 @@
         </div>
 
         <div class="feedColumn">
-            <div class="business">
+            <div id = "bus1" class="business">
                 <div class="row">
                     <div class="businessName">
                         <p id="businessName">
@@ -117,7 +113,7 @@
 
                 <div class="industryRow">
                     <p> Industry Tags:</p>
-                    <p id="text"> <span class="green">Finance</span></p>
+                    <p id="text"> <span class="green"><script>docWrite(tags1[0])</script></span></p>
                 </div>
 
 
@@ -212,7 +208,7 @@
 
 
             </div>
-            <div class="business">
+            <div id = "bus2" class="business">
                 <div class="row">
                     <div class="businessName">
                         <p id="businessName">
@@ -231,8 +227,112 @@
 
                 <div class="industryRow">
                     <p> Industry Tags:</p>
-                    <p id="text"><span class="pink">Hospitality</span></p>
+                    <p id="text"> <span class="pink"><script>docWrite(tags2[0])</script></span></p>                </div>
+
+
+                <div class="row">
+                    <div class='description'>
+                        <h1>Description</h1>
+                        <div class="desText">
+                            <p>
+                                <script>
+                                    docWrite(description)
+                                </script>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contacts">
+                        <h1>Contact</h1>
+                        <div class="row">
+                            <div class="socialContainer">
+                                <h2><u>Socials</u></h2>
+
+
+                                <div class="row">
+                                    <div class="iconList">
+                                        <p>
+                                        </p>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                        <p></p>
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <p></p>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+
+                                    </div>
+                                    <div style="width: 10%">
+                                    </div>
+                                    <div class="socialList">
+                                        <p>@<script>docWrite(ig)</script>
+                                        </p>
+
+                                        <p style="line-height:2.5">@<script>docWrite(fb)</script>
+                                        </p>
+
+                                        <p style="line-height:1.8">@<script>docWrite(tw)</script>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contactContainer">
+                                <div class="row">
+                                    <div class="iconList">
+                                        <p>Email: </p>
+                                        <p style="line-height:1.8">Phone #: </p>
+                                        <p style="line-height:1.8">Name: </p>
+                                        <p style="line-height:1.8">Position: </p>
+                                    </div>
+                                    <div style="width: 10%">
+                                    </div>
+                                    <div class="socialList">
+                                        <p>
+                                            <script>docWrite(mail)</script>
+                                        </p>
+                                        <p style="line-height:1.8">
+                                            <script>docWrite(phone)</script>
+                                        </p>
+                                        <p style="line-height:1.8">
+                                            <script>docWrite(employee)</script>
+                                        </p>
+                                        <p style="line-height:1.8">
+                                            <script>docWrite(position)</script>
+                                        </p>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+
+            </div>
+
+            <div id = "bus3" class="business3" >
+                <div class="row">
+                    <div class="businessName">
+                        <p id="businessName">
+                            <script>
+                                docWrite(name)
+                            </script>
+                        </p>
+                    </div>
+                    <div class="businessLogo">
+                        <img src="logo.png" class="logo">
+                    </div>
+
+
+
+                </div>
+
+                <div class="industryRow">
+                    <p> Industry Tags:</p>
+                    <p id="text"> <span class="blue"><script>docWrite(tags3[0])</script></span></p>                </div>
 
 
                 <div class="row">
