@@ -9,4 +9,11 @@ var phone = "(888) 888-8888";
 
 function docWrite(variable) {
     document.write(variable);
+
+
+    
 }
+
+var colors = ['#ff0000', '#ffa500', '#ffff00','#008000','#0000ff','#4b0082', '#ee82ee'];
+var random_color = colors[Math.floor(Math.random() * colors.length)];
+document.getElementById('span').style.background = random_color;

@@ -1,148 +1,184 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="feedStyle.css">
-        <title>Feed | BuzzMarket</title>
-        <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Poppins">
-        <script src="feed.js"></script>
-    </head>
 
-    <body>
-        <div class="menuBar">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feedStyle.css">
+    <title>Feed | BuzzMarket</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <script src="feed.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+</head>
 
-            <img src="BuzzMarketLogo.png" class="menuLogo">
+<body>
+    <div class="menuBar">
+
+        <span class="white"> <img src="BuzzMarketLogo.png" class="menuLogo"></span>
+        <p id="back"> 
+            _
+        </p>
+        <h3>Buzz</h3><h3 class="black">Market</h3>
+
+    </div>
+    <div class="row">
+        <div class="filters">
+            <p id="filterText"> <u>Filters</u></p>
+            <div style="text-align: left">
+                <h1>Industry:</h1>
+                <p> </p>
+
+                <input type="checkbox" id="industry1" name="industry1" value="Hospitality">
+                <label for="industry1">Hospitality</label><br>
+                <input type="checkbox" id="industry2" name="industry2" value="IT">
+                <label for="vehicle2"> Information Technology</label><br>
+                <input type="checkbox" id="industry3" name="industry3" value="HomeCare">
+                <label for="vehicle3"> House/Home Care</label><br>
+                <input type="checkbox" id="industry4" name="industry4" value="Finance">
+                <label for="vehicle3"> Finance</label><br>
+                <input type="checkbox" id="industry5" name="industry5" value="Other">
+                <label for="vehicle3"> Other</label><br>
+
+                <p></p>
+                <label for="employee-num">Number of Employees:</label>
+
+                <select name="employee-nums" id="employee-nums">
+                    <option value="oneToTen"> 1 - 10</option>
+                    <option value="tenToTwenty">11 - 20</option>
+                    <option value="twenToFifty">21 - 50</option>
+                    <option value="fifToHundy">51 - 100</option>
+                    <option vale="Hundyplus">100+</option>
+                </select>
+
+
+
+            </div>
+
+
+
+
 
         </div>
-        <div class = "row">
-        <div class = "filters">
-            <p id = "filterText"> <u>Filters</u></p>
-            
-
-            <label for="industry">Industry:</label>
-            <select name="industry" id="industry">
-                <option value="hospitality"> Hospitality</option>
-                <option value="IT">Information Technology</option>
-                <option value="homeCare">House/Home Care</option>
-                <option value="finance">Finance</option>
-                <option value="other">Other</option>
-            </select>
-
-            <p> </p>
-            <label for="employee-num">Number of Employees:</label>
-         
-            <select name="employee-nums" id="employee-nums">
-                <option value="oneToTen"> 1 - 10</option>
-                <option value="tenToTwenty">11 - 20</option>
-                <option value="twenToFifty">21 - 50</option>
-                <option value="fifToHundy">51 - 100</option>
-                <option vale ="Hundyplus">100+</option>
-            </select>
-
+        <div style="width: 1%">
         </div>
-        <div style ="width: 1%">
-        </div>
-        
-        <div class = "feedColumn">
-            <div class = "business">
-                <div class ="row">
-                    <div class="businessName">
-                        <p id="businessName"><script>
-                            docWrite(name)
-                        </script></p>
-                    </div>
-                    <div class ="businessLogo">
-                        <img src="logo.png" class="logo">
-                    </div>
-                    
 
-
-                </div>
-                
-                <p> Tags: </p>
+        <div class="feedColumn">
+            <div class="business">
                 <div class="row">
-                  <div class = 'description'>
-                    <h1>Description</h1>
-                    <div class = "desText">
-                        <p>
+                    <div class="businessName">
+                        <p id="businessName">
                             <script>
-                                docWrite(description)
+                                docWrite(name)
                             </script>
                         </p>
                     </div>
-                  </div>
-                  
-                  <div class="contacts">
-                    <h1>Contact</h1>
-                    <div class="row">
-                        <div class = "socialContainer">
-                            <h2><u>Socials</u></h2>
-                            
-                            
-                            <div class ="row">
-                                <div class="iconList">
-                                    <p></p>
-                                    <a href="#"><i class="fa fa-instagram"></i></a> 
-                                    <p></p>
-                                    <a href="#"><i class="fa fa-facebook"></i></a> 
-                                    <p></p>
-                                    <a href="#"><i class="fa fa-twitter"></i></a> 
-        
-                                </div>
-                                <div style = "width: 10%">
-                                </div>
-                                <div class="socialList">
-                                    <p>@<script>docWrite(ig)</script></p>
-                                    <p></p>
-                                    <p>@<script>docWrite(fb)</script></p>
-                                    <p></p>
-                                    <p>@<script>docWrite(tw)</script></p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class = "contactContainer">
-                            <div class = "row">
-                                <div class = "iconList">
-                                    <p>Email: </p> 
-                                    <p>Phone #: </p> 
-                                </div>
-                                <div style = "width: 10%">
-                                </div>
-                                <div class="socialList">
-                                    <p><script>docWrite(mail)</script></p>
-                                    <p><script>docWrite(phone)</script></p>
-                                    
-
-                                </div>
-
-                                
-                            </div>
-                        </div>
-                    
-                    
+                    <div class="businessLogo">
+                        <img src="logo.png" class="logo">
                     </div>
 
-                    
-                    
 
-                    
 
-                    
-                  </div>
                 </div>
-                
+
+                <div class="industryRow">
+                    <p> Industry Tags:</p>
+                    <p id="text"> <span class="pink">Hospitality</span></p>
+                </div>
+
+
+                <div class="row">
+                    <div class='description'>
+                        <h1>Description</h1>
+                        <div class="desText">
+                            <p>
+                                <script>
+                                    docWrite(description)
+                                </script>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contacts">
+                        <h1>Contact</h1>
+                        <div class="row">
+                            <div class="socialContainer">
+                                <h2><u>Socials</u></h2>
+
+
+                                <div class="row">
+                                    <div class="iconList">
+                                        <p></p>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                        <p></p>
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <p></p>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+
+                                    </div>
+                                    <div style="width: 10%">
+                                    </div>
+                                    <div class="socialList">
+                                        <p>@
+                                            <script>docWrite(ig)</script>
+                                        </p>
+                                        <p></p>
+                                        <p>@
+                                            <script>docWrite(fb)</script>
+                                        </p>
+                                        <p></p>
+                                        <p>@
+                                            <script>docWrite(tw)</script>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contactContainer">
+                                <div class="row">
+                                    <div class="iconList">
+                                        <p>Email: </p>
+                                        <p>Phone #: </p>
+                                    </div>
+                                    <div style="width: 10%">
+                                    </div>
+                                    <div class="socialList">
+                                        <p>
+                                            <script>docWrite(mail)</script>
+                                        </p>
+                                        <p>
+                                            <script>docWrite(phone)</script>
+                                        </p>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
 
             </div>
             <p>
         </div>
-        </div>
-        </div>
-        
-    </body>
+    </div>
+    </div>
+
+</body>
 
 </html>

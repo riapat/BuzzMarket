@@ -10,7 +10,7 @@ body{
     width:100%
 }
 .menuBar{
-    height: 10%;
+    height: 12%;
     width: 100%;
     display:flex;
     flex-direction: row;
@@ -18,13 +18,18 @@ body{
 
 
 }
+.businessName{
+    display:flex;
+    align-items: center;
+}
 #businessName{
     font-size: 25px;
     color: rgb(0, 0, 0);
+    
 }
 .menuLogo {
-    width:60px;
-    height:60px;
+    width:80px;
+    height:80px;
 
 }
 .filters{
@@ -32,6 +37,11 @@ body{
     width:20%;
     background-color: rgb(201, 227, 255);
     text-align: center;
+    margin: 20px;
+    border-style: solid;
+    border-color:rgb(201, 227, 255); 
+    border-width: 20px;
+    border-radius: 20px;
 
 }
 #filterText{
@@ -103,13 +113,13 @@ h2{
     font-size: 15px;
 }
 .iconList{
-    width: 30%;
+    width: 40%;
     height: auto;
     text-align: right;
 
 }
 .socialList{
-    width: 70%;
+    width: 60%;
     height: auto;
     text-align: left;
 }
@@ -125,4 +135,66 @@ h2{
     align-items: center;
     flex-direction: column;
 
+}
+.tag{
+    background-color: rgb(209, 160, 255);
+    border-style: solid;
+    border-color: rgb(209, 160, 255);;
+    display: inline-block;
+    height: 15px;
+    width: auto;
+ 
+   
+
+}
+
+.industryRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20px;
+}
+
+#text {
+    padding: 50px;
+    line-height: 2;
+    color: #293241;
+  }
+
+.pink{
+    color: rgb(0, 0, 0);
+    background: pink;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    -webkit-box-decoration-break: clone;
+    -moz-background-inline-policy: clone;
+    box-decoration-break: clone;
+}
+
+.white{
+    color: rgb(255, 245, 98);;
+    background: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin: 0 5px;
+    -webkit-box-decoration-break: clone;
+    -moz-background-inline-policy: clone;
+    box-decoration-break: clone;
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    font-size: 50px;
+    color: #cda800;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: bold;
+}
+.black{
+    color:black;
+    font-weight: normal;
+}
+#back{
+    color: #fae588;
 }
